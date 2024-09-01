@@ -2,7 +2,8 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-/VTC_AR_GAME/
+/VTC_AR_GAME/Library/
+/VTC_AR_GAME/Packages/
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
