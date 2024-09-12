@@ -13,6 +13,10 @@ public class BeeGameManager : MonoBehaviour
 
     private bool moveToFlower = false;
 
+    // Bo sung co che tinh diem - PhuongBang
+    public Text textPoint;
+    private int point = 0;
+
     void Start()
     {
         buttonHarvestFlower.onClick.AddListener(Move2Flower);
@@ -49,5 +53,9 @@ public class BeeGameManager : MonoBehaviour
             randomX,
             flowerObject.transform.localPosition.y,
             randomZ);
+
+        // Bo sung co che tinh diem - PhuongBang
+        point++;
+        textPoint.text = "Point: " + point.ToString();
     }
 }
